@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Monoton&family=Oleo+Script+Swash+Caps&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*----------------------------------------- ubuntu-font start -----------------------------------------*/
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+/*----------------------------------------- ubuntu-font end -----------------------------------------*/
+
+header{
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    font-size: 2em;
+    font-weight: bolder;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth effect */
+}
+.logo{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(52, 54, 54);
+    font-size: 1em;
+}
+html{
+    background: url('./img/backgroud_body.png') center/cover no-repeat;
+
+}
+
+.main-body{
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+    
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the RGBA values to control the color and transparency */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    border-radius: 20px; /* Optional: Add border-radius for rounded corners */
+    padding: 20px; /* Optional: Add padding for content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth effect */
+   
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 1px;
+    /* width: 200px;
+    height: 100px; */
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(62, 72, 72);
+}
+
+.search-box input{
+    border-bottom: 5px solid rgb(62, 72, 72) ;
+    width: 100%;    
+}
+.search-box input ,.search-box button{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    color: rgb(52, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+}
+button i{
+    transition: all .3s ease;
+}
+button i:hover{
+    font-size: 25px;
+}
+
+.weather-body{
+    display: flex;
+    padding: 10px 5px;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.weather-body img{
+    width: 50%;
+}
+
+.weather{
+    width: 40%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.description{
+    
+    margin-top: 10px;
+    font-size: 2.1rem;
+    /* border-bottom: 2px solid rgb(52, 54, 54); */
+    font-weight: 550;
+    width: fit-content;
+}
+
+.weather-detail{
+    padding: 20px 0;
+    /* border: 2px solid red; */
+    width: 60%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+}
+
+.weather-detail p:first-child{
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(52, 54, 54);
+    width: fit-content;
+}
+
+.values{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.c-temp{
+    font-size: 2rem;
+}
