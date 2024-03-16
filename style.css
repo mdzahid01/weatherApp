@@ -182,3 +182,20 @@ button i:hover{
 .c-temp{
     font-size: 2rem;
 }
+
+/* <------------------------------------MOBILE VIEW----------------------------------------------> */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+    .weather-body{
+        flex-direction: column;
+    }
+
+    .weather{
+        width: 100%;
+    }
+
+    .weather-detail{
+        width: 100%;
+    }
+  }
