@@ -57,8 +57,8 @@ async function checkWeather(city){
             case "Snow" :
                 img.src = './img/snow.png';
                 break;
-            // default :
-            //     img.src = './img/snow.png';
+             default :
+                 img.src = './img/404.png';
                     
             }
         description.innerText = json.weather[0].main; 
